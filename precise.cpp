@@ -1138,6 +1138,7 @@ int main(void){
 
     std::cout.precision(18);
     fp64 su = 0.0;
+    /*
     while(1){
         fp64 x;
         std::cout << "Input x:";
@@ -1152,6 +1153,7 @@ int main(void){
         std::cout << "ceil(x):" << ceil(x) << std::endl;
         std::cout << "round(x):" << round(x) << std::endl;
     }
+    */
 
     return 0;
 }
