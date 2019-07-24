@@ -12,21 +12,21 @@ Emulation of floating point arithmetic (using integer instructions) with special
 
 #### USAGE:
 
-#include "fp64.h"  
-#include <iostream>  
+    #include "fp64.h"  
+    #include <iostream>  
 
-int main(){  
+    int main(){  
 
-     fp64 x;  
-     fp64 y;  
-     std::cout.precision(18);  
-     std::cout << "Input x:";   
-     std::cin >> x;  
-     std::cout << "Input y:";  
-     std::cin >> y;  
-     std::cout << "x/y:" << x/y << std::endl;  
-     std::cout << "log(x):" << log(x) << std::endl;  
-}  
+         fp64 x;  
+         fp64 y;  
+         std::cout.precision(18);  
+         std::cout << "Input x:";   
+         std::cin >> x;  
+         std::cout << "Input y:";  
+         std::cin >> y;  
+         std::cout << "x/y:" << x/y << std::endl;  
+         std::cout << "log(x):" << log(x) << std::endl;  
+    }  
   
 
 #### TODO:
