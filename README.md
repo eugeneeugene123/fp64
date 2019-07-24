@@ -1,7 +1,7 @@
 ### fp64
 copy of www.bitbucket.org/eugene_eugene_123/fp64
 
-Emulation of floating point arithmetic (using integer instructions) with special non-IEEE 128bit format (64 bits mantissa, 32 bits exponent and 32 bits for attributes). This emulation is only 1-5 times slower (clang -O3 -m64, Sempron 145) than FPU and gives exact 80bit (extended, long double) results. NaNs and denormals are supported, as like as infinity. 2 different algorithms for division can be selected: Newton or tabled with derivative calculation. The first is slower, the second uses small (2Kbyte) lookup table. The first algorithm is used in AMD Ryzen processors (makes division 3 times faster than previous algorithms, according to Agner Fog's instruction tables).
+Emulation of floating point arithmetic (using integer instructions) with special non-IEEE 128bit format (64 bits mantissa, 32 bits exponent and 32 bits for attributes). This emulation is only 1-5 times slower (clang -O3 -m64, Sempron 145) than FPU and gives exact 80bit (extended, long double) results. NaNs and denormals are supported, as like as infinity. 2 different algorithms for division can be selected: Newton or tabled with derivative calculation. The first is slower, the second uses small (2Kbyte) lookup table. The first algorithm is used in AMD Ryzen processors (makes division 3 times faster than previous algorithms, according to Agner Fog's instruction tables). Sine function is implemented using coefficients obtained using @samhocevar/lolremez
 
 #### CURRENTLY IMPLEMENTED
 - basic arithmetic operations (+, -, *, /, +=, -=, *=, /=, unary -)
